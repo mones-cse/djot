@@ -1,0 +1,88 @@
+- install virtualenv
+- add git
+- install django
+- create a project called mysite
+- run project
+- run project in custom port
+- start app called polls
+- update polls view file to show hello world
+- create a url page for poll app
+- understand concept of urlpatterns, include()
+- understand path and its arguments
+
+
+- create a model for polls app containing Question, Choice
+- Question class will contain two field question_text and pub_date
+- Choice class will contain tree field question, choice_text, votes
+- update project settings page for activating model by adding install apps section
+- understand the concept of makemigrations
+- understand the concept of sqlmigrate
+- understand the concept of migrate
+- understand the concept of shell
+- add one question using shell
+- understand the concept of __str__() and implement it in polls model.py for helpful representation of the objects
+- create a superuser
+- runserver and access to admin panel
+- show polls content in admin panel updating polls/admin.py file
+- understand the concept of site.register
+- add one question and corresponding answer from admin panel
+
+
+- add details, results, vote view in polls/view.py file
+- update url.py for above 3 view
+- understand the concept of HttpResponse
+- use HttpResponse to show all questions in index view
+- understand the concept of template and its folder structure
+- create template called index.html
+- add index.html template in view file
+- understand the concept of django.shortcuts
+- understand the concept of render shortcut and use that to show index.html template
+- understand the concept of Object.DoesNotExist and raise Http404.
+- use above concept for error handling in detail view
+- create a template called detail.html
+- understand the concept of  get_object_or_404() and implement in detail view
+- update detail.html to show all the choice of that question
+- remove hardcoded urls from detail template using that name argument of path
+- understand the concept of namespacing url name and add app_name in view also use that concept in index.html template
+
+
+
+- understand the concept of method= post and method= get
+- create minimal form in detail page to take input choice
+- create vote view in view.py
+- update url view named vote
+- understand the concept of request.POST and request.GET
+- understand the concept of HttpResponseRedirect
+- understand the concept of reverse()
+- create a result view using get_object_or_404, render
+- create results.html template
+- understand the concept of generic view
+- update polls/urls.py so that instead of using question_id we can use pk
+- update view file  using listview and detailview concept
+
+
+- understand the concept of automated test
+- find a bug where was_published_recently() show future post
+- create a test case to expose the bug
+- run test
+- fix the bug
+- understand the concept of django test client
+- understand the concept of setup_test_environment
+- create a test case for view
+- update view based on bug
+- create test case for detail view
+
+
+
+- understand the concept of django.contrib.staticfiles
+- add custom css
+- add custom background
+
+
+- customize admin page
+- change the admin page layout
+- add related object, choice with each question
+-
+
+
+
