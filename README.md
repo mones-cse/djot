@@ -1,0 +1,2 @@
+# djot
+Django official tutorial 
