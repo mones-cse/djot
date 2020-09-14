@@ -19,8 +19,17 @@
 - understand the concept of sqlmigrate
 - understand the concept of migrate
 - understand the concept of shell
+- understand the timezone from django.utils
 - add one question using shell
+- retrieve all objects from question using shell
+- understand concept of self
 - understand the concept of __str__() and implement it in polls model.py for helpful representation of the objects
+- understand datetime.timedelta function
+- add was_published_recently function in Question class
+- learn usage of __startswith
+- get all the question published in this year using shell
+- understand the concept of modelclassname_set like choice_set
+- add 4 choices using shell
 - create a superuser
 - runserver and access to admin panel
 - show polls content in admin panel updating polls/admin.py file
