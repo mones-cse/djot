@@ -31,7 +31,7 @@
 - understand the concept of modelclassname_set like choice_set
 - understand modelclassname_set.create () (object.create is initiate and save that object to db at the same time)
 - add 4 choices using shell
-- create a superuser
+- create a superuser (python manage.py createsuperuser)
 - runserver and access to admin panel
 - show polls content in admin panel updating polls/admin.py file
 - understand the concept of site.register
