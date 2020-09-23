@@ -18,8 +18,7 @@ def index(request):
 
 def details(request, question_id):
     selected_question = get_object_or_404(Question, pk=question_id)
-    choices = selected_question.choice_set.all()
-    return render(request, 'polls/detail.html', {'choices': choices})
+    return render(request, 'polls/detail.html', {'selected_question': selected_question})
 
 
 def result(request, question_id):

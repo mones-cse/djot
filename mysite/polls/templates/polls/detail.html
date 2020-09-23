@@ -1,5 +1,6 @@
-{% if choices %}
-    {% for choice in choices %}
+{% if selected_question %}
+    <h1>{{selected_question.question_text}}</h1>
+    {% for choice in selected_question.choice_set.all%}
         <ul>
             <li>{{choice}}</li>
         </ul>
