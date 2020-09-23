@@ -49,6 +49,7 @@
 - understand the concept of render shortcut and use that to show index.html template
 - understand the concept of Object.DoesNotExist and raise Http404.
 - use above concept for error handling in detail view
+- learn backward relationships in query section.
 - create a template called detail.html
 - understand the concept of  get_object_or_404() and implement in detail view
 - update detail.html to show all the choice of that question

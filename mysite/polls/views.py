@@ -1,6 +1,6 @@
 from django.http import HttpResponse, Http404
 from django.template import loader
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Question, Choice
 
@@ -13,11 +13,13 @@ def index(request):
     context = {
         'latest_question_list': latest_question_list,
     }
-    return render(request,'polls/index.html',context)
+    return render(request, 'polls/index.html', context)
 
 
 def details(request, question_id):
-    return HttpResponse("Details of %s" % question_id)
+    selected_question = get_object_or_404(Question, pk=question_id)
+    choices = selected_question.choice_set.all()
+    return render(request, 'polls/detail.html', {'choices': choices})
 
 
 def result(request, question_id):
