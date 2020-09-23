@@ -2,7 +2,7 @@ from django.http import HttpResponse, Http404
 from django.template import loader
 from django.shortcuts import render
 
-from .models import Question
+from .models import Question, Choice
 
 
 def index(request):
